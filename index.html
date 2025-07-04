@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/images/movie-media-player-svgrepo-com.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="topnav">
+        <a href="/index.html" class="active">Movieflix</a>
+        <div class="search-container">
+            <button class="random-btn" id="suggestBtn"><i class="ri-dice-6-fill"></i></button>
+            <form role="search" id="form">
+                <input type="search" id="query" name="q" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+
+    <!-- <div style="padding-left: 16px;"></div> -->
+<section id="section">
+         <div class="row">
+        <div class="column">
+            <div class="card">
+                <center><img src="/images/thumbnail.jpg" alt="" class="thumbnail"></center>
+                <h3>Wakanda Forever</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="load-container">
+    <button id="load-more" class="load-btn"><i class="ri-refresh-fill"></i></button>
+</div>
+
+<div  class="popupBg">
+    <h1>Random Suggestion</h1>
+    <div id="popupCard" class="popupCard"></div>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
