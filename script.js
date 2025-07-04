@@ -128,3 +128,16 @@ document.getElementById("load-more").addEventListener("click", () => {
   page++;
   returnMovies(APILINK(page));
 });
+
+
+function updateLogoText() {
+  const logo = document.getElementById("logoText");
+  if (window.innerWidth <= 768) {
+    logo.textContent = "MF";
+  } else {
+    logo.textContent = "Movieflix";
+  }
+}
+
+window.addEventListener("resize", updateLogoText);
+window.addEventListener("DOMContentLoaded", updateLogoText);
