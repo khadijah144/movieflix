@@ -266,8 +266,9 @@ form {
 }
 
 
-@media (min-width: 411px) and (max-width: 735px) {  .column{
-    width: 40%;
+@media (min-width: 500px) and (max-width: 735px) {  
+    .column{
+    width: 50%;
     padding: 0px;
     margin-top: 20px;
     margin-left: 60px;
